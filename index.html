@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Adolescncia re Saudee — an independent academic journal website prototype.">
+<title>Adolescncia re Saudee | Research Journal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="topline"><span>INDEPENDENT ACADEMIC JOURNAL WEBSITE</span><span>Research • Evidence • Knowledge</span></div>
+  <div class="brand-wrap">
+    <a class="brand" href="index.html" aria-label="Adolescncia re Saudee home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M8 15 Q21 9 31 18 V51 Q20 43 8 48 Z"/><path d="M56 15 Q43 9 33 18 V51 Q44 43 56 48 Z"/><path d="M32 18 V52"/><path d="M16 25 Q22 24 27 28 M16 33 Q22 32 27 36 M48 25 Q42 24 37 28 M48 33 Q42 32 37 36"/></svg></span>
+      <span><strong>Adolescncia re Saudee</strong><small>Journal of Research & Health Studies</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#current">Current Issue</a><a href="#archives">Archives</a><a href="#editorial">Editorial Board</a><a href="#guidelines">Author Guidelines</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">OPEN ACCESS • RESEARCH & SCHOLARSHIP</p>
+    <h1>Advancing research.<br><em>Sharing knowledge.</em></h1>
+    <p class="hero-text">A home for scholarly work, research findings and evidence-informed discussion across health and related disciplines.</p>
+    <div class="hero-actions"><a class="button button-light" href="#current">Explore articles <span>↗</span></a><a class="text-link" href="#guidelines">For authors →</a></div>
+  </div>
+  <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div><div class="art-center"><span>ARS</span><small>RESEARCH<br>JOURNAL</small></div></div>
+  <div class="hero-foot"><span>Independent journal website prototype</span><span>ISSN: 2177-5282</span></div>
+</section>
+<section class="notice"><span class="notice-dot"></span><p><strong>Website status:</strong> This is a demonstration site. Sample article records and editorial details must be replaced with verified information before publication.</p></section>
+<section class="section" id="current">
+  <div class="section-heading"><div><p class="eyebrow">DISCOVER</p><h2>Featured articles</h2></div><p>Browse the sample records below. Search by title, author, keyword or article ID.</p></div>
+  <div class="filters"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search articles or article ID…" aria-label="Search articles"></label><select id="yearFilter" aria-label="Filter by year"><option value="all">All years</option><option value="2026">2026</option><option value="2025">2025</option></select></div>
+  <div class="article-grid" id="articleGrid"></div>
+  <p class="empty-state" id="emptyState" hidden>No articles match your search.</p>
+</section>
+<section class="issue-band" id="archives"><div><p class="eyebrow">BROWSE BY YEAR</p><h2>Journal archives</h2><p>Explore issues by publication year. Add verified volumes and issues before launch.</p></div><div class="archive-list"><button data-archive-year="2026"><span>2026</span><small>Sample archive · Volume 1</small><b>↗</b></button><button data-archive-year="2025"><span>2025</span><small>Sample archive · Volume 1</small><b>↗</b></button></div></section>
+<section class="section two-col" id="editorial">
+  <div><p class="eyebrow">JOURNAL INFORMATION</p><h2>Editorial board</h2><p class="muted">Add the names, affiliations and roles of editors only after their consent and confirmation.</p></div>
+  <div class="editor-card"><div class="editor-initials">EB</div><div><strong>Editorial board details pending</strong><p>Editor-in-Chief · Managing Editor · Editorial Members</p><small>Replace this sample block with approved biographies and institutional affiliations.</small></div></div>
+</section>
+<section class="guidelines" id="guidelines"><div class="guidelines-inner"><div><p class="eyebrow">FOR CONTRIBUTORS</p><h2>Author guidelines</h2><p>Prepare a clear, original manuscript and ensure that all sources, authorship details and ethical approvals are accurately reported.</p></div><div class="guideline-list"><details open><summary>Manuscript preparation</summary><p>Submit an editable manuscript with title, author names and affiliations, abstract, keywords, main text, references, tables and figures. Add word limits and formatting requirements after the journal's editorial policy is finalized.</p></details><details><summary>Research ethics and originality</summary><p>Authors are responsible for originality, accurate citations, permissions, conflicts-of-interest disclosures and any required ethics approval or informed consent.</p></details><details><summary>Peer review and decisions</summary><p>Describe the actual review process, decision categories, expected timelines and appeals procedure here. Do not claim peer review until a real process is in place.</p></details><details><summary>Publication charges and licensing</summary><p>State any article processing charges, waiver policy, copyright terms and open-access licence clearly before submissions open.</p></details></div></div></section>
+<section class="section contact-section" id="contact"><div><p class="eyebrow">GET IN TOUCH</p><h2>Contact the journal</h2><p class="muted">Replace the sample details below with a monitored official email and postal address.</p></div><div class="contact-card"><span class="contact-icon">✉</span><div><strong>Editorial office</strong><p>Email: <a href="mailto:editor@example.org">editor@example.org</a></p><small>Sample email — not a real journal contact.</small></div></div></section>
+</main>
+<footer><div class="footer-brand"><span class="footer-mark">ARS</span><span><strong>Adolescncia re Saudee</strong><small>Journal of Research & Health Studies</small></span></div><div class="footer-links"><a href="#guidelines">Policies</a><a href="#editorial">Editorial board</a><a href="#contact">Contact</a></div><p class="copyright">ISSN: 2177-5282 · © <span id="yearNow"></span> Adolescncia re Saudee · Website prototype. No affiliation with any similarly named journal is implied.</p></footer>
+<div class="modal" id="articleModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" id="modalBackdrop"></div><article class="modal-panel"><button class="modal-close" id="modalClose" aria-label="Close article">×</button><p class="eyebrow" id="modalMeta"></p><h2 id="modalTitle"></h2><p class="modal-authors" id="modalAuthors"></p><div class="modal-rule"></div><h3>Abstract</h3><p id="modalAbstract"></p><div class="keyword-line"><strong>Keywords:</strong> <span id="modalKeywords"></span></div><div class="keyword-line" id="modalCitationLine" hidden><strong>Published citation:</strong> <span id="modalCitation"></span></div><div class="article-id-line"><strong>Article ID:</strong> <span id="modalId"></span></div><a class="button button-dark" id="modalPdf" href="#" target="_blank" rel="noopener">Open PDF ↗</a><p class="modal-warning" id="modalWarning">Demonstration record: replace with a real, approved article and its final PDF before publishing.</p></article></div>
+<script src="script.js"></script>
+</body>
+</html>
